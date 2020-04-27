@@ -1,0 +1,25 @@
+CREATE TABLE lessonResult (
+    id INTEGER NOT NULL UNIQUE ON CONFLICT REPLACE,
+    lessonStarted TEXT,
+    lessonCompleted TEXT
+);
+
+selectAll:
+SELECT * FROM lessonResult;
+
+selectResultById:
+SELECT * FROM lessonResult WHERE id = ?;
+
+insertLessonCompleted:
+UPDATE lessonResult
+SET lessonCompleted = ?
+WHERE id = ?;
+
+insertLessonResult:
+INSERT INTO lessonResult(
+    id,
+    lessonStarted
+) VALUES (?, ?);
+
+deleteResults:
+DELETE FROM lessonResult;

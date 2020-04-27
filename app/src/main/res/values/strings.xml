@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MimoTask</string>
+    <string name="title_activity_lesson">LessonActivity</string>
+    <string name="run">Run</string>
+    <string name="completion_dialog_message">All lessons are completed. Do you want to restart?</string>
+    <string name="completion_message">All lessons completed. Press restart to complete lessons again</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="restart">Restart</string>
+    <string name="dialog_ok">ok</string>
+</resources>

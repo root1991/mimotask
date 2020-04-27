@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainScreenBackground"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.root.mimotask.lesson.LessonActivity">
+
+    <LinearLayout
+        android:id="@+id/lessonContainer"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_height="80dp"
+        android:orientation="horizontal" />
+
+    <Space
+        android:layout_weight="1"
+        android:id="@+id/spaceContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonComplete"
+        android:text="@string/run"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_run_selector"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

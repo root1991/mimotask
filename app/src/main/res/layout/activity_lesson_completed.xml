@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/completion_message"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:text="@string/restart"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_run_selector"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
